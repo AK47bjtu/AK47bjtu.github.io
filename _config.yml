@@ -50,11 +50,15 @@ highlight:
 # Category & Tag
 default_category: uncategorized
 category_map:
+##- 技术
 ##- Java
 ##- Linux
+##- 算法
+##- 综合
 tag_map:
 ##- Java
 ##- Hexo
+##- 设计模式
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
