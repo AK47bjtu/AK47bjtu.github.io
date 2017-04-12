@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+    
+    <entry>
+      <title><![CDATA[My first Hexo Blog]]></title>
+      <url>/2017/04/10/create-hexo-blog/</url>
+      <content type="html"><![CDATA[<p>Welcome to Bamboo’s fild. It’s my first blog.There’re many key points of building this blog.</p>
+<h2 id="Building-log"><a href="#Building-log" class="headerlink" title="Building log"></a>Building log</h2><h3 id="Create-a-github-page"><a href="#Create-a-github-page" class="headerlink" title="Create a github page"></a>Create a github page</h3><h3 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h3><p>一、搜索：安装<a href="https://github.com/PaicHyperionDev/hexo-generator-search" target="_blank" rel="external">hexo-generator-search</a><br>二、代码语法高亮<br>三、RSS：安装<a href="https://github.com/PaicHyperionDev/hexo-generator-search" target="_blank" rel="external">hexo-generator-feed</a></p>
+<h3 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h3><p>一、关于页面<br>（themes/raytaylorism/_md/about/index.md）<br>（source/_data/about.json）<br>二、读书页面（source/_data/reading.json）<br>三、外部链接（source/_data/link.json）<br>四、首页幻灯片（source/_data/slider.json）<br>五、new标签（source/_data/hint.json）</p>
+<h3 id="样式"><a href="#样式" class="headerlink" title="样式"></a>样式</h3><p>一、主题颜色配置（themes/raytaylorism/_config.yml;clolor）<br>二、页面标题、多语言（_config.yml）<br>三、（themes/raytaylorism/source/favicon.png）</p>
+<h2 id="theme疑难问题"><a href="#theme疑难问题" class="headerlink" title="theme疑难问题"></a>theme疑难问题</h2><h3 id="问题一：代码高亮有时失灵-（未解决）"><a href="#问题一：代码高亮有时失灵-（未解决）" class="headerlink" title="问题一：代码高亮有时失灵 （未解决）"></a>问题一：代码高亮有时失灵 （未解决）</h3><h4 id="1-java代码-Demo"><a href="#1-java代码-Demo" class="headerlink" title="1.java代码 Demo"></a>1.java代码 Demo</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/** </span></div><div class="line"> * 方法一</div><div class="line"> * 单例模式的实现：饿汉式,线程安全 但效率比较低 </div><div class="line"> */  </div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SingletonTest</span> </span>&#123;  </div><div class="line"></div><div class="line">    </div><div class="line">    <span class="function"><span class="keyword">private</span> <span class="title">SingletonTest</span><span class="params">()</span> </span>&#123;  <span class="comment">/* 定义一个私有的构造方法 */</span></div><div class="line">    &#125;  </div><div class="line"></div><div class="line">    <span class="comment">/* 将自身的实例对象设置为一个属性,并加上Static和final修饰符 */</span></div><div class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> SingletonTest instance = <span class="keyword">new</span> SingletonTest();  </div><div class="line"></div><div class="line">    <span class="comment">// 静态方法返回该类的实例</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> SingletonTest <span class="title">getInstancei</span><span class="params">()</span> </span>&#123;  </div><div class="line">        <span class="keyword">return</span> instance;  </div><div class="line">    &#125;  </div><div class="line">  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>code 块中“/<em>…</em>/”注释块可以，正常使用。 “//…”注释无法正常使用，会导致注释下方的所有代码高亮效果失效成灰色。</p>
+<h4 id="2-调查"><a href="#2-调查" class="headerlink" title="2.调查"></a>2.调查</h4><p>（1）是否是代码语法高亮主题包有问题？<br> &emsp;&emsp;替换<a href="https://jmblog.github.io/color-themes-for-google-code-prettify/" target="_blank" rel="external">Prettify Theme</a>中其它主题问题仍存在。<br>（2）页面显示CSS效果。<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;span class="keyword"&gt;&lt;span class="kwd"&gt;static&lt;/span&gt;&lt;/span&gt;</div><div class="line">/* 变成了 */</div><div class="line">&lt;span class="keyword"&gt;&lt;span class="com"&gt;static&lt;/span&gt;&lt;/span&gt;</div></pre></td></tr></table></figure></p>
+<p>原因未知。</p>
+<h2 id="未启用功能"><a href="#未启用功能" class="headerlink" title="未启用功能"></a>未启用功能</h2><h3 id="一、评论"><a href="#一、评论" class="headerlink" title="一、评论"></a>一、评论</h3><p>&emsp;&emsp;评论插件默认使用<a href="http://dev.duoshuo.com/threads/58d1169ae293b89a20c57241" target="_blank" rel="external">多说</a>。多说官网重要通知：因公司业务调整，非常遗憾的向大家宣布多说项目即将关闭。 我们将于2017年6月1日正式关停服务，在此之前您可以通过后台的数据导出功能导出自己站点的评论数据。 对此给您造成的不便，我们深表歉意，感谢您的一路相伴。<br>二、站点分析。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 日常 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> Nodejs </tag>
+            
+        </tags>
+        
+    </entry>
+    
+  
+  
+</search>

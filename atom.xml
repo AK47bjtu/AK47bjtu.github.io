@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Bamboo&#39;s field</title>
+  <subtitle>Bamboo&#39;s blog</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-04-12T14:52:38.429Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>wzq</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>My first Hexo Blog</title>
+    <link href="http://yoursite.com/2017/04/10/create-hexo-blog/"/>
+    <id>http://yoursite.com/2017/04/10/create-hexo-blog/</id>
+    <published>2017-04-10T15:47:44.000Z</published>
+    <updated>2017-04-12T14:52:38.429Z</updated>
+    
+    <summary type="html">
+    
+      搭建本blog的日志
+    
+    </summary>
+    
+      <category term="日常" scheme="http://yoursite.com/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+      <category term="Nodejs" scheme="http://yoursite.com/tags/Nodejs/"/>
+    
+  </entry>
+  
+</feed>
